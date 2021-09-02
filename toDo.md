@@ -1,12 +1,13 @@
 Notes: for getting shelf
 
-We need to go to  Redux folder
+[x]We need to go to  Redux folder
  setup shelf.reducer.js > this will hold the state piece similar to basic index.js
  
-Need to go to sagas folder
+[x]Need to go to sagas folder
  setup shelf.saga.js > this will hold fetch function as well as shelf function
  
- Go to sagas > root.saga folder and import shelf.saga and add the saga to the yield
+ [x]Go to sagas > root.saga folder and import shelf.saga and add the saga to the yield
  Go to redux > root.reducer and import shelf reducer and then add to combine reducer
  
-Need to import root reducer and root saga
+[x]Need to import root reducer and root saga
+
