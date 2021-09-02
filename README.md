@@ -1,5 +1,5 @@
 # REACT AUTH SHELF
-
+Group
 Our client, Prime Digital Academy: Room 2, has asked for an app to simulate the behavior of their shelf. That is, a list of items placed on the classroom shelf. More details about each of the features are listed below in the README.md.
 
 ## Use the Download ZIP Option (Don't Fork & Don't Clone)
