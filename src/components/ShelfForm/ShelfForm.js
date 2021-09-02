@@ -8,8 +8,7 @@ function ShelfForm() {
     let [description, setDescription] = useState('')
     let [url, setUrl] = useState('')
     
-    
-    const user = useSelector((store) => store.user);
+ 
     
     
     const handleSubmit = (event) => {
@@ -17,7 +16,7 @@ function ShelfForm() {
     
 	
         dispatch({ 
-		type: 'POST_ITEM',
+		type: '', // Need to determine Saga and need to post to DB
         payload: {
             description: description,
             image_url: url,
