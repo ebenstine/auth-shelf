@@ -22,7 +22,7 @@ function ShelfPage() {
       <ShelfForm/>
       <ul>
         {shelf.map(item=>(
-          <li key={item.id}> item={item}</li>
+          <li key={item.id}> {item.description}</li>
         ))}
       </ul>
     </div>

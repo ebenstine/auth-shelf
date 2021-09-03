@@ -3,16 +3,15 @@ import {takeLatest, put} from 'redux-saga/effects'
 
 
 
-function* postShelf() {
+function* postShelf(action) {
   
     try{
         const res = yield axios.post('/api/shelf', action.payload);
         
-        yield put ({
-            type:'FETCH_SHELF',
-            
-        });
-    }catch (err) {
+        yield put({
+            type: 'FETCH_SHELF'
+        })
+    } catch (err) {
         console.log( 'Post shelf', err);
     }
 }
