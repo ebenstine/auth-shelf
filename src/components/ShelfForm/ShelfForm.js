@@ -16,7 +16,7 @@ function ShelfForm() {
     
 	
         dispatch({ 
-		type: '', // Need to determine Saga and need to post to DB
+		type: 'POST_SHELF', // Need to determine Saga and need to post to DB
         payload: {
             description: description,
             image_url: url,

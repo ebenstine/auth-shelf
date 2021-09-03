@@ -3,7 +3,7 @@ const shelfReducer = (state = [], action) => {
         case 'SET_SHELF':
             return action.payload;
             default:
-                return state:
+                return state
     }
 }
 
