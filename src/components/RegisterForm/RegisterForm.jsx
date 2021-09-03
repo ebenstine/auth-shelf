@@ -9,7 +9,8 @@ function RegisterForm() {
 
   const registerUser = (event) => {
     event.preventDefault();
-
+    console.log('Clicked');
+    console.log(username, password);
     dispatch({
       type: 'REGISTER',
       payload: {
@@ -17,7 +18,8 @@ function RegisterForm() {
         password: password,
       },
     });
-  }; // end registerUser
+  }; 
+  // end registerUser
 
   return (
     <form className="formPanel" onSubmit={registerUser}>

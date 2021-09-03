@@ -1,9 +1,10 @@
 import React from 'react'
-
+import {useDispatch, useSelector} from 'react-redux'
+import {useState} from 'react'
 function ShelfForm() {
     
     const dispatch = useDispatch();
-
+    const user = useSelector(store => store.user)
     
     let [description, setDescription] = useState('')
     let [url, setUrl] = useState('')
@@ -12,10 +13,12 @@ function ShelfForm() {
     
     
     const handleSubmit = (event) => {
+        console.log('ButtonClicked');
         event.preventDefault();
     
-	
+	console.log('DISPATCH LOG',description, url, user.id);
         dispatch({ 
+            
 		type: 'POST_SHELF', // Need to determine Saga and need to post to DB
         payload: {
             description: description,
